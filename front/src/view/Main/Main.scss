@@ -1,0 +1,43 @@
+#ui-app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#ui-header {
+  box-shadow: 0 1px 1px rgba(0,0,0,.08);
+  background: #fff;
+  padding: 0 5%;
+  .ivu-menu-horizontal.ivu-menu-light:after {
+    background: none;
+  }
+  .ivu-menu-item {
+    padding: 0;
+    border-bottom: none;
+    a {
+      display: block;
+      padding: 0 20px;
+      color: #666;
+    }
+    &:hover {
+      border-bottom: none;
+      a {
+        color: #5cb85c;
+      }
+    }
+  }
+  .ivu-menu-item-active {
+    border-bottom: none;
+    a {
+      color: #5cb85c;
+    }
+  }
+}
+#ui-content {
+  flex: 1;
+}
+#ui-footer {
+  padding: 16px 0 14px;
+  background-color: #414141;
+  color: #aaa;
+  text-shadow: 0 -1px 0 #333;
+}

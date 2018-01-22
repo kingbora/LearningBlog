@@ -1,0 +1,77 @@
+.ui-card-list {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  .ivu-card-body {
+    padding-bottom: 10px;
+  }
+  //标题部分
+  .ui-list-title {
+    height: 28px;
+    margin-bottom: 10px;
+    //文章类型
+    .ui-list-article-type {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      border-radius: 50%;
+      float: left;
+    }
+    .ui-list-title-text {
+      height: 28px;
+      line-height: 28px;
+      padding-left: 10px;
+      float: left;
+      color: #2c3e50;
+    }
+  }
+  .ui-type-original {
+    .ui-list-article-type {
+      color: #5cb85c;
+      border: 1px solid #5cb85c;
+    }
+    .ui-list-title-text {
+      &:hover {
+        color: #5cb85c;
+      }
+    }
+  }
+  .ui-type-receive {
+    .ui-list-article-type {
+      color: #b83820;
+      border: 1px solid #b83820;
+    }
+    .ui-list-title-text {
+      &:hover {
+        color: #b83820;
+      }
+    }
+  }
+  //文章主题部分
+  .ui-list-body {
+    height: 100px;
+    img.ui-list-body-img {
+      width: 100%;
+      height: 100%;
+      float: left;
+    }
+    p.ui-list-body-content {
+      padding-left: 10px;
+      color: #888;
+    }
+  }
+  //文章作者信息和发布信息
+  .ui-list-author {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    padding: 10px 0 0;
+    border-top: 1px solid #f6f6f6;
+    color: #888;
+    .ui-list-write-time,.ui-list-article-look {
+      padding-left: 25px;
+    }
+  }
+}
