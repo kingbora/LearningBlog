@@ -1,0 +1,15 @@
+#ui-tag {
+  text-align: left;
+  margin-top: 25px;
+  .ui-tag-text {
+    padding-left: 10px;
+  }
+  a {
+    display: inline-block;
+    line-height: 20px;
+    margin: 0 10px 10px 0;
+    padding: 0 10px;
+    background: #eee;
+    border-radius: 99px;
+  }
+}

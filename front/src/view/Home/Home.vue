@@ -6,8 +6,10 @@
           <router-view />
         </div>
       </Col>
-      <Col :sm="8" :xs="0">
+      <Col :sm="{span:6,offset:2}" :xs="0">
+        <UiCatalog></UiCatalog>
         <UiMusic></UiMusic>
+        <UiTag></UiTag>
       </Col>
     </Row>
   </div>

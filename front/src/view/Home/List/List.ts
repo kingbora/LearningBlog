@@ -4,6 +4,7 @@
 import Component from 'vue-class-component';
 import Vue from 'vue';
 import UiList from "@/components/DataList/ui-list.vue";
+import axios from 'axios';
 
 @Component({
   components: {
@@ -53,4 +54,8 @@ export default class ListView extends Vue {
       key: 3
     }
   ];
+
+  mounted() {
+    axios.get("http://www.baidu.com");
+  }
 }

@@ -3,11 +3,15 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
+import axios from './services/httpInterceptors';
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import './theme.scss';
 
 Vue.config.productionTip = false;
+
+//将axios挂载到prototype上,http服务由axios代理
+Vue.prototype.$http = axios;
 
 Vue.use(iView);
 
