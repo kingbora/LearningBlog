@@ -1,6 +1,8 @@
 .DS_Store
-/front/node_modules/
-/front/dist/
+/front/node_modules
+/front/dist
+/admin/node_modules
+/admin/dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

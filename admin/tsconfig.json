@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2015", "es2017", "dom"],
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": false,
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "node_modules/@types"
+  ]
+}
